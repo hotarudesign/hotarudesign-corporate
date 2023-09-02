@@ -1,0 +1,129 @@
+@use "../../../base/variable" as v;
+
+.mv {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100vw;
+    height: 0;
+    background: #222;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transition: ease-in-out 0.5s;
+    z-index: -1;
+  }
+  &.showBg {
+    &::before,
+    &::after {
+      height: 50vh;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      top: 50%;
+    }
+  }
+
+  &__inner {
+    height: 100%;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    position: relative;
+    z-index: 5;
+    &-ttl {
+      font-weight: 900;
+      font-size: 6rem;
+      opacity: 1;
+    }
+    &-lead {
+      font-weight: 300;
+      font-size: 2rem;
+      opacity: 1;
+    }
+  }
+  .circle {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    &__item {
+      display: inline-block;
+      background: linear-gradient(#fff, #e7e7e7);
+      border-radius: 50%;
+      position: absolute;
+      &01 {
+        width: 30px;
+        height: 30px;
+        top: 20%;
+        right: 2%;
+      }
+      &02 {
+        width: 45px;
+        height: 45px;
+        top: 10%;
+        right: 10%;
+      }
+      &03 {
+        width: 60px;
+        height: 60px;
+        top: 20%;
+        right: 20%;
+      }
+      &04 {
+        width: 20px;
+        height: 20px;
+        bottom: 20%;
+        right: 30%;
+      }
+      &05 {
+        width: 35px;
+        height: 35px;
+        bottom: 40%;
+        right: 40%;
+      }
+      &06 {
+        width: 60px;
+        height: 60px;
+        top: 30%;
+        left: 50%;
+      }
+      &07 {
+        width: 60px;
+        height: 60px;
+        top: 20%;
+        left: 30%;
+      }
+      &08 {
+        width: 10px;
+        height: 10px;
+        bottom: 10%;
+        left: 20%;
+      }
+      &09 {
+        width: 25px;
+        height: 25px;
+        bottom: 50%;
+        left: 10%;
+      }
+      &10 {
+        width: 40px;
+        height: 40px;
+        bottom: 20%;
+        left: 2%;
+      }
+    }
+  }
+}

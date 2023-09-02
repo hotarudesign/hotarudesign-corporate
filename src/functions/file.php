@@ -11,6 +11,7 @@ function add_link_files()
     // JavaScriptの読み込み
     wp_enqueue_script('g-sap', "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js");
     wp_enqueue_script('scrollTrigger', "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js");
+    wp_enqueue_script('gsap-setting', get_template_directory_uri() . '/assets/js/gsap-setting.js', '', '', true);
     wp_enqueue_script('app', get_template_directory_uri() . '/assets/js/index.js', '', '', true);
 }
 add_action('wp_enqueue_scripts', 'add_link_files');

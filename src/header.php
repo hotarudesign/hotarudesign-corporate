@@ -9,7 +9,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__inner">
             <h1 class="header__logo logo">
                 <a href="<?php echo esc_url(home_url('/')); ?>">

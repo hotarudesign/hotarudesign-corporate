@@ -1,5 +1,10 @@
 .header {
   padding: 8px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 .header__inner {
   display: flex;
@@ -18,4 +23,128 @@
 .header .g-nav__item {
   font-weight: 500;
   font-size: 1.8rem;
+  color: #fff;
+}
+
+.mv {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.mv::before, .mv::after {
+  content: "";
+  display: inline-block;
+  width: 100vw;
+  height: 0;
+  background: #222;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: ease-in-out 0.5s;
+  z-index: -1;
+}
+.mv.showBg::before, .mv.showBg::after {
+  height: 50vh;
+}
+.mv.showBg::before {
+  top: 0;
+}
+.mv.showBg::after {
+  top: 50%;
+}
+.mv__inner {
+  height: 100%;
+}
+.mv .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  position: relative;
+  z-index: 5;
+}
+.mv .hero-ttl {
+  font-weight: 900;
+  font-size: 6rem;
+  opacity: 1;
+}
+.mv .hero-lead {
+  font-weight: 300;
+  font-size: 2rem;
+  opacity: 1;
+}
+.mv .circle {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.mv .circle__item {
+  display: inline-block;
+  background: linear-gradient(#fff, #e7e7e7);
+  border-radius: 50%;
+  position: absolute;
+}
+.mv .circle__item01 {
+  width: 30px;
+  height: 30px;
+  top: 20%;
+  right: 2%;
+}
+.mv .circle__item02 {
+  width: 45px;
+  height: 45px;
+  top: 10%;
+  right: 10%;
+}
+.mv .circle__item03 {
+  width: 60px;
+  height: 60px;
+  top: 20%;
+  right: 20%;
+}
+.mv .circle__item04 {
+  width: 20px;
+  height: 20px;
+  bottom: 20%;
+  right: 30%;
+}
+.mv .circle__item05 {
+  width: 35px;
+  height: 35px;
+  bottom: 40%;
+  right: 40%;
+}
+.mv .circle__item06 {
+  width: 60px;
+  height: 60px;
+  top: 30%;
+  left: 50%;
+}
+.mv .circle__item07 {
+  width: 60px;
+  height: 60px;
+  top: 20%;
+  left: 30%;
+}
+.mv .circle__item08 {
+  width: 10px;
+  height: 10px;
+  bottom: 10%;
+  left: 20%;
+}
+.mv .circle__item09 {
+  width: 25px;
+  height: 25px;
+  bottom: 50%;
+  left: 10%;
+}
+.mv .circle__item10 {
+  width: 40px;
+  height: 40px;
+  bottom: 20%;
+  left: 2%;
 }
