@@ -18,3 +18,8 @@ body {
   margin: 0 auto;
   padding: 0 4%;
 }
+
+.sec-ttl {
+  font-weight: 900;
+  font-size: 6rem;
+}
