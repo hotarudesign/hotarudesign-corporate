@@ -81,3 +81,13 @@ gsap
   //   circle10
   .fromTo(".circle__item10", fadeInSet, { ...fadeInTo, delay: 4.5 })
   .fromTo(".circle__item10", from, animeTo);
+
+ScrollTrigger.create({
+  trigger: ".left",
+  pin: true,
+  start: "center center",
+  endTrigger: ".right",
+  end: "bottom top",
+  pinSpacing: false,
+  markers: true,
+});

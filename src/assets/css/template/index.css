@@ -232,3 +232,58 @@
   margin: 0 auto;
   width: 80px;
 }
+
+.works {
+  padding: 120px 0;
+}
+.works__inner {
+  display: flex;
+}
+.works .left {
+  align-self: flex-start;
+  padding: 50px 40px;
+  width: 50%;
+  max-height: 420px;
+  text-align: center;
+  background: #e7e7e7;
+}
+.works .left .works-ttl {
+  font-style: italic;
+}
+.works .left .works-desc {
+  margin: 40px 0 0;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.works .left .works-link {
+  margin: 40px auto 0;
+  display: block;
+  padding: 12px 0;
+  max-width: 270px;
+  font-size: 1.8rem;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 3px 3px 10px #ccc;
+}
+.works .left .works-link:hover, .works .left .works-link:focus {
+  background: #fff;
+  color: #222;
+  transition: 0.5s;
+}
+.works .right {
+  width: 50%;
+}
+.works .right .works__thumb {
+  width: 100%;
+  height: 420px;
+}
+.works .right .works__thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
