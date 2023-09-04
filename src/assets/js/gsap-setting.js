@@ -86,8 +86,8 @@ ScrollTrigger.create({
   trigger: ".left",
   pin: true,
   start: "center center",
-  endTrigger: ".right",
-  end: "bottom top",
+  endTrigger: ".works__thumb03",
+  end: "center center",
   pinSpacing: false,
   markers: true,
 });
