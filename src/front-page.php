@@ -5,5 +5,6 @@
     <?php get_template_part('parts/home/works'); ?>
     <?php get_template_part('parts/home/service'); ?>
     <?php get_template_part('parts/home/about'); ?>
+    <?php get_template_part('parts/home/voice'); ?>
 </main>
 <?php get_footer(); ?>

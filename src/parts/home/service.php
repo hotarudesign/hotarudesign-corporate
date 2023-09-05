@@ -21,5 +21,14 @@
                 </figure>
             </div>
         </div>
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="service__btn btn">
+            <p class="service__btn-txt btn-txt">View More</p>
+            <div class="service__btn-icon btn-icon">
+                <picture>
+                    <source srcset='<?php echo ImgPath; ?>/webp/btn_arrow-black.webp' type='image/webp'>
+                    <img src="<?php echo ImgPath; ?>/btn_arrow-black.png" alt="">
+                </picture>
+            </div>
+        </a>
     </div>
 </section>
