@@ -22,3 +22,25 @@ body {
   font-weight: 900;
   font-size: 6rem;
 }
+.btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 0 20px;
+  &-txt {
+    font-weight: 300;
+    font-size: 3.2rem;
+    font-style: italic;
+  }
+  &-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s;
+  }
+  &:hover {
+    .btn-icon {
+      transform: scale(1.2);
+      transition: transform 0.5s;
+    }
+  }
+}
