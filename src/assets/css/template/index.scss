@@ -6,4 +6,6 @@
 @use "./parts/home/works";
 @use "./parts/home/service";
 @use "./parts/home/about";
+@use "./parts/home/voice";
+@use "../util/cta";
 @use "../util/footer";
