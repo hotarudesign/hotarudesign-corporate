@@ -432,7 +432,6 @@
 }
 
 .cta {
-  margin-bottom: 200px;
   background: url(../../images/webp/cta_bg02.webp) no-repeat center/cover;
   color: #fff;
 }
@@ -464,4 +463,45 @@
   text-align: center;
   background: #fba525;
   border-radius: 5px;
+}
+
+.footer {
+  padding: 40px 0 10px;
+  background: #ccc;
+}
+.footer__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0 100px;
+}
+.footer__logo {
+  width: 60px;
+}
+.footer .f-nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 0 20px;
+  margin: 20px 0 0;
+}
+.footer .f-nav__item {
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: italic;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.footer .f-nav__item:hover, .footer .f-nav__item:focus {
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+.footer__copy {
+  margin: 60px 0 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: italic;
+  color: #fff;
 }

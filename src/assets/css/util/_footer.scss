@@ -1,0 +1,44 @@
+@use "../base/variable" as v;
+.footer {
+  padding: 40px 0 10px;
+  background: #ccc;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0 100px;
+  }
+  &__logo {
+    width: 60px;
+  }
+  .f-nav {
+    &__list {
+      display: flex;
+      justify-content: center;
+      gap: 0 20px;
+      margin: 20px 0 0;
+    }
+    &__item {
+      font-weight: 500;
+      font-size: 2rem;
+      font-style: italic;
+      color: #fff;
+      opacity: 1;
+      transition: opacity 0.5s;
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+        transition: opacity 0.5s;
+      }
+    }
+  }
+  &__copy {
+    margin: 60px 0 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+  }
+}
