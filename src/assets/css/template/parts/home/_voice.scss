@@ -1,8 +1,45 @@
 @use "../../../base/variable" as v;
 
 .voice {
-  padding: 80px 0;
+  padding: 80px 0 100px;
   &-ttl {
     font-style: italic;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 0 40px;
+    margin: 80px 0 0;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 20px 0;
+    &__txt {
+      display: flex;
+      flex-direction: column;
+      gap: 10px 0;
+      &-ttl {
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+      }
+      &-desc {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.6;
+      }
+    }
+    &-avatar {
+      margin: 0 auto;
+      width: 160px;
+      height: 160px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
