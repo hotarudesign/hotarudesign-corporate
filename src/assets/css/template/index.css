@@ -22,7 +22,8 @@
 }
 .header .g-nav__item {
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-style: italic;
   color: #fff;
 }
 
@@ -430,13 +431,16 @@
 .voice {
   padding: 80px 0;
 }
+.voice-ttl {
+  font-style: italic;
+}
 
 .cta {
   background: url(../../images/webp/cta_bg02.webp) no-repeat center/cover;
   color: #fff;
 }
 .cta__inner {
-  padding: 80px 0;
+  padding: 80px 4%;
   position: relative;
 }
 .cta__txt {
