@@ -46,3 +46,7 @@ body {
   transform: scale(1.2);
   transition: transform 0.5s;
 }
+
+.page-container {
+  padding: 120px 0;
+}

@@ -1,0 +1,15 @@
+@use "../base/variable" as v;
+
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/webp/page-ttl_bg.webp) no-repeat top center/cover;
+  height: 40vh;
+  &__txt {
+    font-weight: 900;
+    font-size: 5rem;
+    font-style: italic;
+    color: #fff;
+  }
+}

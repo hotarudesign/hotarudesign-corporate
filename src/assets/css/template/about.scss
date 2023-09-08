@@ -1,0 +1,13 @@
+@use "../base/variable" as v;
+@use "../util/header";
+@use "../util/headline";
+@use "../util/cta";
+@use "../util/footer";
+
+.about {
+  &-ttl {
+    font-weight: 900;
+    font-size: 4rem;
+    text-align: center;
+  }
+}
