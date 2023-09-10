@@ -10,10 +10,13 @@ function add_link_files()
         wp_enqueue_style('home', get_stylesheet_directory_uri() . '/assets/css/template/index.css');
     }
     if (is_page('service')) {
-        wp_enqueue_style('service', get_stylesheet_directory_uri() . '/assets/css/template/service.css');
+        wp_enqueue_style('service-page', get_stylesheet_directory_uri() . '/assets/css/template/service.css');
     }
     if (is_page('about')) {
-        wp_enqueue_style('about', get_stylesheet_directory_uri() . '/assets/css/template/about.css');
+        wp_enqueue_style('about-page', get_stylesheet_directory_uri() . '/assets/css/template/about.css');
+    }
+    if (is_page('contact')) {
+        wp_enqueue_style('contact-page', get_stylesheet_directory_uri() . '/assets/css/template/contact.css');
     }
     // JavaScriptの読み込み
     wp_enqueue_script('splide', "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js");

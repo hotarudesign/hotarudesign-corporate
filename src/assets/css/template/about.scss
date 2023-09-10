@@ -1,13 +1,12 @@
 @use "../base/variable" as v;
 @use "../util/header";
 @use "../util/headline";
+@use "./parts/about/profile";
+@use "./parts/about/history";
+@use "./parts/about/skill";
 @use "../util/cta";
 @use "../util/footer";
 
 .about {
-  &-ttl {
-    font-weight: 900;
-    font-size: 4rem;
-    text-align: center;
-  }
+  background: #222;
 }

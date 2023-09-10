@@ -1,0 +1,59 @@
+@use "../../../base/variable" as v;
+
+.profile {
+  color: #fff;
+  &__ttl {
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 2%;
+      opacity: 0.5;
+      &__txt {
+        font-weight: 900;
+        font-size: 2.4rem;
+        letter-spacing: 0.1em;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        font-style: italic;
+      }
+    }
+  }
+  .line {
+    display: inline-block;
+    width: 1px;
+    background: #ccc;
+  }
+  &__inner {
+    position: relative;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 0 40px;
+    &__txt {
+      display: flex;
+      flex-direction: column;
+      gap: 30px 0;
+      width: 50%;
+      &-name {
+        font-weight: 900;
+        font-size: 3.2rem;
+        font-style: italic;
+      }
+      &-desc {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.8;
+      }
+    }
+    &-thumb {
+      width: 50%;
+    }
+  }
+}

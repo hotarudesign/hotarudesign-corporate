@@ -16,7 +16,7 @@
         <div class="header__inner">
             <h1 class="header__logo logo">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src='<?php echo ImgPath; ?>/logo-black.svg' alt='Hotaru Design'>
+                    <img src='<?php echo ImgPath; ?>/logo-white-nobg.svg' alt='Hotaru Design'>
                 </a>
             </h1>
             <nav class="g-nav">
