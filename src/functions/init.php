@@ -14,3 +14,10 @@ function theme_setup()
     );
 }
 add_action('after_setup_theme', 'theme_setup');
+
+// 管理画面本文入力欄を非表示
+add_action('init', 'my_remove_post_support');
+function my_remove_post_support()
+{
+    remove_post_type_support('technique', 'editor');
+}
