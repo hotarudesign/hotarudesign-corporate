@@ -10,7 +10,7 @@
       height: 100%;
       position: absolute;
       top: 0;
-      left: 2%;
+      left: 1%;
       opacity: 0.5;
       &__txt {
         font-weight: 900;
@@ -25,6 +25,7 @@
   .line {
     display: inline-block;
     width: 1px;
+    height: 100%;
     background: #ccc;
   }
   &__inner {

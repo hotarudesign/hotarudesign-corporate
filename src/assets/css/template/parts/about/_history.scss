@@ -15,7 +15,7 @@
       height: 100%;
       position: absolute;
       top: 0;
-      right: 2%;
+      right: 1%;
       transform: rotate(180deg);
       opacity: 0.5;
       &__txt {
@@ -31,6 +31,7 @@
   .line {
     display: inline-block;
     width: 1px;
+    height: 100%;
     background: #ccc;
   }
   &__list {

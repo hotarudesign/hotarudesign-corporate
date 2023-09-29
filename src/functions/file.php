@@ -25,9 +25,12 @@ function add_link_files()
     wp_enqueue_script('scrollTrigger', "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js");
 
     if (is_front_page()) {
-        wp_enqueue_script('app', get_template_directory_uri() . '/assets/js/index.js', '', '', true);
-        wp_enqueue_script('gsap-setting', get_template_directory_uri() . '/assets/js/gsap-setting.js', '', '', true);
-        wp_enqueue_script('splide-setting', get_template_directory_uri() . '/assets/js/splide-setting.js', '', '', true);
+        wp_enqueue_script('app', get_template_directory_uri() . '/assets/js/home/index.js', '', '', true);
+        wp_enqueue_script('gsap-setting', get_template_directory_uri() . '/assets/js/home/gsap-setting.js', '', '', true);
+        wp_enqueue_script('splide-setting', get_template_directory_uri() . '/assets/js/home/splide-setting.js', '', '', true);
+    }
+    if (is_page('about')) {
+        wp_enqueue_script('gsap-setting', get_template_directory_uri() . '/assets/js/about/gsap-setting.js', '', '', true);
     }
 }
 add_action('wp_enqueue_scripts', 'add_link_files');

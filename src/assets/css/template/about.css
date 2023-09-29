@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 10;
 }
 .header__inner {
   display: flex;
@@ -51,7 +51,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left: 2%;
+  left: 1%;
   opacity: 0.5;
 }
 .profile__ttl-wrap__txt {
@@ -64,6 +64,7 @@
 .profile .line {
   display: inline-block;
   width: 1px;
+  height: 100%;
   background: #ccc;
 }
 .profile__inner {
@@ -111,7 +112,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  right: 2%;
+  right: 1%;
   transform: rotate(180deg);
   opacity: 0.5;
 }
@@ -125,6 +126,7 @@
 .history .line {
   display: inline-block;
   width: 1px;
+  height: 100%;
   background: #ccc;
 }
 .history__list {
@@ -184,7 +186,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left: 2%;
+  left: 1%;
   opacity: 0.5;
 }
 .skill__ttl-wrap__txt {
@@ -197,6 +199,7 @@
 .skill .line {
   display: inline-block;
   width: 1px;
+  height: 100%;
   background: #ccc;
 }
 .skill__list {
