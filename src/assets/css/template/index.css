@@ -13,7 +13,7 @@
   padding: 0 2%;
 }
 .header__logo {
-  width: 40px;
+  width: 30px;
 }
 .header .g-nav__list {
   display: flex;
@@ -519,7 +519,7 @@
   gap: 0 100px;
 }
 .footer__logo {
-  width: 60px;
+  width: 40px;
 }
 .footer .f-nav__list {
   display: flex;
