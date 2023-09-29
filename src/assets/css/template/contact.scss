@@ -84,10 +84,12 @@
     }
     .required {
       display: inline-block;
+      font-size: 1.4rem;
       margin-left: 20px;
-      padding: 5px;
+      padding: 4px 10px 5px;
       background: #cc2020;
       color: #fff;
+      border-radius: 5px;
     }
   }
 }
