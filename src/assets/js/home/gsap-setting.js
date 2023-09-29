@@ -91,3 +91,10 @@ ScrollTrigger.create({
   pinSpacing: false,
   markers: true,
 });
+
+gsap.set("#skill__line", {
+  height: "0",
+});
+gsap.to("#skill__line", {
+  height: "100%",
+});
