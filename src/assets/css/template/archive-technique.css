@@ -27,6 +27,20 @@
   color: #fff;
 }
 
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/webp/page-ttl_bg.webp) no-repeat top center/cover;
+  height: 40vh;
+}
+.headline__txt {
+  font-weight: 900;
+  font-size: 5rem;
+  font-style: italic;
+  color: #fff;
+}
+
 .cta {
   background: url(../../images/webp/cta_bg02.webp) no-repeat center/cover;
   color: #fff;
@@ -100,4 +114,73 @@
   text-align: center;
   font-style: italic;
   color: #fff;
+}
+
+.technique__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 40px;
+}
+.technique__item {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e7e7e7;
+}
+.technique__item-link {
+  position: relative;
+  height: 100%;
+}
+.technique__item-link::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: rgba(85, 85, 85, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.technique__item-ttl {
+  padding: 20px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.technique__item-thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.technique__item-thumb img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s;
+}
+.technique__item:hover .technique__item-link::before, .technique__item:focus .technique__item-link::before {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.technique__item:hover .technique__item-ttl, .technique__item:focus .technique__item-ttl {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.technique__item:hover .technique__item-thumb img, .technique__item:focus .technique__item-thumb img {
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }

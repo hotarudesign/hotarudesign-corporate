@@ -1,4 +1,84 @@
 @use "../base/variable" as v;
 @use "../util/header";
+@use "../util/headline";
 @use "../util/cta";
 @use "../util/footer";
+
+.technique {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 40px;
+  }
+  &__item {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e7e7e7;
+    &-link {
+      position: relative;
+      height: 100%;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #555, $alpha: 0.5);
+        opacity: 0;
+        transition: opacity 0.5s;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+    }
+    &-ttl {
+      padding: 20px;
+      width: 100%;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      text-align: center;
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.5s;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+    &-thumb {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        transition: transform 0.5s;
+      }
+    }
+    &:hover,
+    &:focus {
+      .technique__item {
+        &-link {
+          &::before {
+            opacity: 1;
+            transition: opacity 0.5s;
+          }
+        }
+        &-ttl {
+          opacity: 1;
+          transition: opacity 0.5s;
+        }
+        &-thumb {
+          img {
+            transform: scale(1.1);
+            transition: transform 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
