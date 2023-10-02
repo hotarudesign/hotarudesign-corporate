@@ -21,7 +21,7 @@
                 </figure>
             </div>
         </div>
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="service__btn btn">
+        <a href="<?php echo esc_url(home_url('/service')); ?>" class="service__btn btn">
             <p class="service__btn-txt btn-txt">View More</p>
             <div class="service__btn-icon btn-icon">
                 <picture>

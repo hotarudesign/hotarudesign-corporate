@@ -1,6 +1,7 @@
 @use "../base/variable" as v;
 @use "../util/header";
 @use "../util/headline";
+@use "../util/breadcrumbs";
 @use "./parts/service/coding";
 @use "../util/cta";
 @use "../util/footer";

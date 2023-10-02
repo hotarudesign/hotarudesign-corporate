@@ -1,10 +1,10 @@
 <section class="works">
     <div class="works__inner inner">
         <div class="left">
-            <h2 class="works-ttl sec-ttl">Works</h2>
+            <h2 class="works-ttl sec-ttl">Technique</h2>
             <p class="works-desc">Hotaru Designの制作実績を掲載しております。<br>WebサイトやLPのデザインやコーディングを承っており、制作物の品質、スピード感、アフターサポートなどご好評いただいております。
             </p>
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="works__btn btn">
+            <a href="<?php echo esc_url(home_url('/technique')); ?>" class="works__btn btn">
                 <p class="works__btn-txt btn-txt">View More</p>
                 <div class="works__btn-icon btn-icon">
                     <picture>

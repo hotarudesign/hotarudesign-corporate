@@ -3,6 +3,7 @@
     <section class="headline">
         <h2 class="headline__txt">Technique</h2>
     </section>
+    <?php get_template_part('parts/breadcrumbs'); ?>
     <section class="technique page-container">
         <div class="technique__inner inner">
             <ul class="technique__list">

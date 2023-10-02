@@ -21,6 +21,9 @@ function add_link_files()
     if (is_archive('technique')) {
         wp_enqueue_style('archive-technique', get_stylesheet_directory_uri() . '/assets/css/template/archive-technique.css');
     }
+    if (is_singular('technique')) {
+        wp_enqueue_style('archive-technique', get_stylesheet_directory_uri() . '/assets/css/template/single-technique.css');
+    }
     // JavaScriptの読み込み
     wp_enqueue_script('splide', "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js");
     wp_enqueue_script('splide-auto', "https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js");

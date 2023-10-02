@@ -3,6 +3,7 @@
     <section class="headline">
         <h2 class="headline__txt">Service</h2>
     </section>
+    <?php get_template_part('parts/breadcrumbs'); ?>
     <section class="service page-container">
         <div class="service__inner inner">
             <h2 class="service-ttl">私たちにできること</h2>

@@ -13,7 +13,7 @@
                 </picture>
             </figure>
         </div>
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="about__btn btn">
+        <a href="<?php echo esc_url(home_url('/about')); ?>" class="about__btn btn">
             <p class="about__btn-txt btn-txt">View More</p>
             <div class="about__btn-icon btn-icon">
                 <picture>

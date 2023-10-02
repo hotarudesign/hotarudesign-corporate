@@ -41,6 +41,33 @@
   color: #fff;
 }
 
+.breadcrumbs {
+  padding: 10px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+.breadcrumbs.about {
+  background: #222;
+  color: #fff;
+  border-bottom: 1px solid #7b7a7a;
+}
+.breadcrumbs span {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+.breadcrumbs span:not(:last-of-type) {
+  margin-right: 5px;
+  text-underline-offset: 0.3em;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.breadcrumbs span:not(:last-of-type):hover, .breadcrumbs span:not(:last-of-type):focus {
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+.breadcrumbs span:not(:first-of-type) {
+  margin-left: 5px;
+}
+
 .cta {
   background: url(../../images/webp/cta_bg02.webp) no-repeat center/cover;
   color: #fff;

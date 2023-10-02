@@ -3,6 +3,7 @@
     <section class="headline">
         <h2 class="headline__txt">Contact</h2>
     </section>
+    <?php get_template_part('parts/breadcrumbs'); ?>
     <section class="contact page-container">
         <div class="contact__inner inner">
             <div class="contact__head">
