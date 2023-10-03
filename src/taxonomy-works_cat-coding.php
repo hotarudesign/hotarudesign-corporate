@@ -19,6 +19,7 @@
                 ?>
 
                 <h3 class="works__block-ttl">Coding</h3>
+                <p class="works__block-lead">コーディングに関する制作実績を掲載しております。</p>
                 <ul class="works__list">
                     <?php if ($the_query->have_posts()) : ?>
                         <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>

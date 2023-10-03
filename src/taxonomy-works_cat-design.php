@@ -19,6 +19,7 @@
                 ?>
 
                 <h3 class="works__block-ttl">Design</h3>
+                <p class="works__block-lead">デザインに関する制作実績を掲載しております。<br>※許可をいただいたもののみ掲載しております。</p>
                 <ul class="works__list">
                     <?php if ($the_query->have_posts()) : ?>
                         <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
