@@ -5,11 +5,32 @@
 @use "../util/cta";
 @use "../util/footer";
 
-.technique {
+.works {
+  &-ttl {
+    font-weight: 900;
+    font-size: 4rem;
+    text-align: center;
+  }
+  &-lead {
+    margin: 40px 0 0;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  &__block {
+    margin: 80px 0 0;
+    &-ttl {
+      font-weight: 900;
+      font-size: 3.2rem;
+      font-style: italic;
+    }
+  }
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 40px;
+    margin: 40px 0 0;
   }
   &__item {
     border-radius: 10px;
@@ -63,7 +84,7 @@
     }
     &:hover,
     &:focus {
-      .technique__item {
+      .works__item {
         &-link {
           &::before {
             opacity: 1;

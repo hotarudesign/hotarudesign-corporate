@@ -7,6 +7,7 @@
     <section class="service page-container">
         <div class="service__inner inner">
             <h2 class="service-ttl">私たちにできること</h2>
+            <p class="service-lead">Hotaru Designが提供しているサービスについて紹介させていただきます。</p>
             <div class="coding">
                 <h3 class="coding-ttl">Coding</h3>
                 <ol class="coding__list">
