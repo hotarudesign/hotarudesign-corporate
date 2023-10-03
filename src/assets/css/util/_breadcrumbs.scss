@@ -1,7 +1,7 @@
 @use "../base/variable" as v;
 
 .breadcrumbs {
-  padding: 10px 0;
+  padding: 14px 0;
   border-bottom: 1px solid #e7e7e7;
   &.about {
     background: #222;
@@ -9,7 +9,7 @@
     border-bottom: 1px solid #7b7a7a;
   }
   span {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-style: italic;
     &:not(:last-of-type) {
       margin-right: 5px;

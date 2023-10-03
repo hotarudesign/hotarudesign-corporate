@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main class="main">
     <section class="headline">
-        <h2 class="headline__txt">works-Page</h2>
+        <h2 class="headline__txt">Works-Page</h2>
     </section>
     <?php get_template_part('parts/breadcrumbs'); ?>
     <article class="works page-container">
@@ -11,15 +11,19 @@
                         <div class="post__head">
                             <div class="post__head__txt">
                                 <h2 class="post__head__txt-ttl"><?php the_title(); ?></h2>
-                                <a href="<?php the_field('link'); ?>" target="_blank" rel="noopener noreferrer" class="post__head__btn btn">
-                                    <p class="post__head__btn-txt btn-txt">View</p>
-                                    <div class="post__head__btn-icon btn-icon">
-                                        <picture>
-                                            <source srcset='<?php echo ImgPath; ?>/webp/btn_arrow-black.webp' type='image/webp'>
-                                            <img src="<?php echo ImgPath; ?>/btn_arrow-black.png" alt="">
-                                        </picture>
-                                    </div>
-                                </a>
+                                <?php $value = get_post_meta($post->ID, 'link', true); ?>
+                                <?php if (empty($value)) : ?>
+                                <?php else : ?>
+                                    <a href="<?php the_field('link'); ?>" target="_blank" rel="noopener noreferrer" class="post__head__btn btn">
+                                        <p class="post__head__btn-txt btn-txt">View</p>
+                                        <div class="post__head__btn-icon btn-icon">
+                                            <picture>
+                                                <source srcset='<?php echo ImgPath; ?>/webp/btn_arrow-black.webp' type='image/webp'>
+                                                <img src="<?php echo ImgPath; ?>/btn_arrow-black.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </a>
+                                <?php endif; ?>
                             </div>
                             <figure class="post__head__thumb">
                                 <?php the_post_thumbnail(); ?>
@@ -50,6 +54,7 @@
                     </div>
             <?php endwhile;
             endif; ?>
+            <?php get_template_part('parts/post-pagination'); ?>
         </div>
     </article>
 </main>

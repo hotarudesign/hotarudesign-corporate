@@ -20,7 +20,6 @@
                 );
                 $the_query = new WP_Query($args);
                 ?>
-
                 <h3 class="works__block-ttl">Coding</h3>
                 <ul class="works__list">
                     <?php if ($the_query->have_posts()) : ?>
@@ -37,6 +36,15 @@
                     endif; ?>
                     <?php wp_reset_postdata(); ?>
                 </ul>
+                <a href="<?php echo esc_url(home_url('/works_cat/coding')); ?>" target="_blank" rel="noopener noreferrer" class="works__btn btn">
+                    <p class="post__head__btn-txt btn-txt">View More</p>
+                    <div class="post__head__btn-icon btn-icon">
+                        <picture>
+                            <source srcset='<?php echo ImgPath; ?>/webp/btn_arrow-black.webp' type='image/webp'>
+                            <img src="<?php echo ImgPath; ?>/btn_arrow-black.png" alt="">
+                        </picture>
+                    </div>
+                </a>
             </div>
             <div class="works__block">
                 <h3 class="works__block-ttl">Design</h3>
@@ -66,6 +74,15 @@
                     endif; ?>
                     <?php wp_reset_postdata(); ?>
                 </ul>
+                <a href="<?php echo esc_url(home_url('/works_cat/design')); ?>" target="_blank" rel="noopener noreferrer" class="works__btn btn">
+                    <p class="post__head__btn-txt btn-txt">View More</p>
+                    <div class="post__head__btn-icon btn-icon">
+                        <picture>
+                            <source srcset='<?php echo ImgPath; ?>/webp/btn_arrow-black.webp' type='image/webp'>
+                            <img src="<?php echo ImgPath; ?>/btn_arrow-black.png" alt="">
+                        </picture>
+                    </div>
+                </a>
             </div>
         </div>
     </section>

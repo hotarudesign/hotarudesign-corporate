@@ -1,0 +1,45 @@
+@use "../base/variable" as v;
+
+.post-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0 40px;
+  &__item {
+    width: 240px;
+    border-radius: 10px;
+    opacity: 1;
+    transition: opacity 0.5s;
+    &-label {
+      font-weight: 900;
+      font-size: 1.8rem;
+      font-style: italic;
+      text-align: center;
+    }
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+      transition: opacity 0.5s;
+    }
+    &-thumb {
+      margin: 20px 0 0;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        height: 150px;
+        object-fit: cover;
+        box-shadow: 0 0 10px #e7e7e7;
+        border-radius: 10px;
+        border: 1px solid #e7e7e7;
+        transition: transform 0.5s;
+      }
+    }
+    &-caption {
+      margin: 12px 0 0;
+      width: 100%;
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: -0.04em;
+      text-align: center;
+    }
+  }
+}
