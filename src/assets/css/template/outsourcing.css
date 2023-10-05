@@ -27,6 +27,20 @@
   color: #fff;
 }
 
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/webp/page-ttl_bg.webp) no-repeat top center/cover;
+  height: 40vh;
+}
+.headline__txt {
+  font-weight: 900;
+  font-size: 5rem;
+  font-style: italic;
+  color: #fff;
+}
+
 .breadcrumbs {
   padding: 14px 0;
   border-bottom: 1px solid #e7e7e7;
@@ -93,4 +107,17 @@
   text-align: center;
   font-style: italic;
   color: #fff;
+}
+
+.outsourcing-ttl {
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: center;
+}
+.outsourcing-lead {
+  margin: 40px 0 0;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: center;
 }

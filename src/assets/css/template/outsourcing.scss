@@ -1,4 +1,27 @@
 @use "../base/variable" as v;
 @use "../util/header";
+@use "../util/headline";
 @use "../util/breadcrumbs";
+@use "./parts/outsourcing/question";
+@use "./parts/outsourcing/feature";
+@use "./parts/outsourcing/case";
+@use "./parts/outsourcing/point";
+@use "./parts/outsourcing/reason";
+@use "./parts/outsourcing/skill";
+@use "./parts/outsourcing/price";
 @use "../util/footer";
+
+.outsourcing {
+  &-ttl {
+    font-weight: 900;
+    font-size: 4rem;
+    text-align: center;
+  }
+  &-lead {
+    margin: 40px 0 0;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
