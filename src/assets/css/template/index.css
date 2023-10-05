@@ -251,8 +251,64 @@
   border-width: 120px 100vw 0 0;
   border-color: transparent #efefef transparent transparent;
 }
+.works .block {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+@media not screen and (min-width: 576px) {
+  .works .block {
+    width: 100px;
+    height: 100px;
+  }
+}
+.works .circle {
+  overflow: visible;
+  animation: rotation 18s linear infinite;
+}
+.works .circle__shape {
+  fill: none;
+}
+.works .circle__txt {
+  fill: #222;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .works__inner {
   display: flex;
+  position: relative;
+}
+.works__inner .splide {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  visibility: visible;
+}
+.works__inner .splide__track {
+  height: 100%;
+}
+.works__inner .splide__slide {
+  height: 100%;
+  font-weight: 900;
+  font-size: 6rem;
+  color: #e7e7e7;
 }
 .works .left {
   align-self: flex-start;
@@ -261,6 +317,8 @@
   min-height: 420px;
   text-align: center;
   background: #e7e7e7;
+  position: relative;
+  z-index: 2;
 }
 .works .left .works-ttl {
   font-style: italic;
@@ -488,7 +546,7 @@
 }
 .cta-ttl {
   font-weight: 900;
-  font-size: 4rem;
+  font-size: 3.6rem;
 }
 .cta-desc {
   font-weight: 500;

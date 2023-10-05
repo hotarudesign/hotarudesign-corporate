@@ -1,10 +1,27 @@
 <section class="works">
+    <div class="block">
+        <svg class="circle" viewBox="0 0 100 100">
+            <path id="circle" class="circle__shape" d="M 0 50 A 50 50 0 1 1 0 51 z" />
+            <text class="circle__txt">
+                <textPath xlink:href="#circle">
+                    Coding & Design Coding & Design Coding & Design
+                </textPath>
+            </text>
+        </svg>
+    </div>
     <div class="works__inner inner">
+        <section class="splide splide2" aria-label="テキストの無限ループ">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">More Speedy, More Politely, More Creative</p>
+                </ul>
+            </div>
+        </section>
         <div class="left">
-            <h2 class="works-ttl sec-ttl">Technique</h2>
+            <h2 class="works-ttl sec-ttl">Works</h2>
             <p class="works-desc">Hotaru Designの制作実績を掲載しております。<br>WebサイトやLPのデザインやコーディングを承っており、制作物の品質、スピード感、アフターサポートなどご好評いただいております。
             </p>
-            <a href="<?php echo esc_url(home_url('/technique')); ?>" class="works__btn btn">
+            <a href="<?php echo esc_url(home_url('/works')); ?>" class="works__btn btn">
                 <p class="works__btn-txt btn-txt">View More</p>
                 <div class="works__btn-icon btn-icon">
                     <picture>

@@ -16,8 +16,64 @@
     border-width: 120px 100vw 0 0;
     border-color: transparent #efefef transparent transparent;
   }
+  .block {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    @include v.sm {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .circle {
+    overflow: visible;
+    animation: rotation 18s linear infinite;
+    &__shape {
+      fill: none;
+    }
+    &__txt {
+      fill: #222;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.03em;
+    }
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   &__inner {
     display: flex;
+    position: relative;
+    .splide {
+      margin: 0 calc(50% - 50vw);
+      width: 100vw;
+      height: 100px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+      visibility: visible;
+      &__track {
+        height: 100%;
+      }
+      &__list {
+      }
+      &__slide {
+        height: 100%;
+        font-weight: 900;
+        font-size: 6rem;
+        color: #e7e7e7;
+      }
+    }
   }
   .left {
     align-self: flex-start;
@@ -26,6 +82,8 @@
     min-height: 420px;
     text-align: center;
     background: #e7e7e7;
+    position: relative;
+    z-index: 2;
     .works {
       &-ttl {
         font-style: italic;
