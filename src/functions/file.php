@@ -27,6 +27,9 @@ function add_link_files()
     if (is_tax('works_cat')) {
         wp_enqueue_style('works_cat-term', get_stylesheet_directory_uri() . '/assets/css/template/taxonomy-works_cat.css');
     }
+    if (is_page('outsourcing')) {
+        wp_enqueue_style('outsourcing', get_stylesheet_directory_uri() . '/assets/css/template/outsourcing.css');
+    }
     // JavaScriptの読み込み
     wp_enqueue_script('splide', "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js");
     wp_enqueue_script('splide-auto', "https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js");
@@ -39,7 +42,10 @@ function add_link_files()
         wp_enqueue_script('splide-setting', get_template_directory_uri() . '/assets/js/home/splide-setting.js', '', '', true);
     }
     if (is_page('about')) {
-        wp_enqueue_script('gsap-setting', get_template_directory_uri() . '/assets/js/about/gsap-setting.js', '', '', true);
+        wp_enqueue_script('about-gsap-setting', get_template_directory_uri() . '/assets/js/about/gsap-setting.js', '', '', true);
+    }
+    if (is_page('outsourcing')) {
+        wp_enqueue_script('outsourcing-gsap-setting', get_template_directory_uri() . '/assets/js/about/gsap-setting.js', '', '', true);
     }
 }
 add_action('wp_enqueue_scripts', 'add_link_files');
