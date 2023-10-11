@@ -12,6 +12,9 @@ body {
   letter-spacing: 0.1em;
   color: #222;
 }
+body.is-menuOpen {
+  overflow-y: hidden;
+}
 
 .inner {
   max-width: 1280px;
@@ -22,6 +25,15 @@ body {
 .sec-ttl {
   font-weight: 900;
   font-size: 6rem;
+}
+
+.md-br {
+  display: none;
+}
+@media not screen and (min-width: 768px) {
+  .md-br {
+    display: block;
+  }
 }
 
 .btn {
@@ -49,4 +61,9 @@ body {
 
 .page-container {
   padding: 120px 0;
+}
+@media not screen and (min-width: 576px) {
+  .page-container {
+    padding: 80px 0;
+  }
 }

@@ -50,6 +50,9 @@
     &-desc {
       font-weight: 400;
       font-size: 2rem;
+      @include v.sm {
+        font-size: 1.6rem;
+      }
     }
   }
 }

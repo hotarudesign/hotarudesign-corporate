@@ -3,6 +3,9 @@
 .cta {
   background: url(../../images/webp/cta_bg02.webp) no-repeat center/cover;
   color: #fff;
+  @include v.sm {
+    background-position: 100% 100%;
+  }
   &__inner {
     padding: 80px 4%;
     position: relative;
@@ -15,18 +18,19 @@
   &-ttl {
     font-weight: 900;
     font-size: 3.6rem;
+    @include v.xl {
+      font-size: 2.4rem;
+      line-height: 1.4;
+    }
   }
   &-desc {
     font-weight: 500;
     font-size: 2rem;
     line-height: 1.6;
+    @include v.xl {
+      font-size: 1.6rem;
+    }
   }
-  // &-avatar {
-  //   width: 220px;
-  //   position: absolute;
-  //   bottom: 0;
-  //   right: 0;
-  // }
   &__btn {
     display: inline-block;
     margin: 40px 0 0;
@@ -37,5 +41,8 @@
     text-align: center;
     background: #fba525;
     border-radius: 5px;
+    @include v.lg {
+      font-size: 1.8rem;
+    }
   }
 }

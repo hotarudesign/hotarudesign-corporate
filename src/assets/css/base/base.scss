@@ -12,6 +12,9 @@ body {
   font-family: v.$fontNoto;
   letter-spacing: 0.1em;
   color: #222;
+  &.is-menuOpen {
+    overflow-y: hidden;
+  }
 }
 .inner {
   max-width: 1280px;
@@ -21,6 +24,12 @@ body {
 .sec-ttl {
   font-weight: 900;
   font-size: 6rem;
+}
+.md-br {
+  display: none;
+  @include v.md {
+    display: block;
+  }
 }
 .btn {
   display: flex;
@@ -48,4 +57,7 @@ body {
 }
 .page-container {
   padding: 120px 0;
+  @include v.sm {
+    padding: 80px 0;
+  }
 }

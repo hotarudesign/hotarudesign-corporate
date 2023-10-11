@@ -4,6 +4,9 @@
   display: flex;
   justify-content: center;
   gap: 0 40px;
+  @include v.sm {
+    gap: 0 10px;
+  }
   &__item {
     width: 240px;
     border-radius: 10px;
@@ -40,6 +43,9 @@
       font-size: 1.4rem;
       letter-spacing: -0.04em;
       text-align: center;
+      @include v.sm {
+        line-height: 1.4;
+      }
     }
   }
 }

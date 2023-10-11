@@ -19,7 +19,11 @@
                     <img src='<?php echo ImgPath; ?>/logo-white-nobg.svg' alt='Hotaru Design'>
                 </a>
             </h1>
+            <button class="toggle-btn"><span></span><span></span></button>
             <nav class="g-nav">
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="g-nav__logo">
+                    <img src='<?php echo ImgPath; ?>/logo-black-nobg.svg' alt='Hotaru Design'>
+                </a>
                 <?php
                 wp_nav_menu(
                     array(

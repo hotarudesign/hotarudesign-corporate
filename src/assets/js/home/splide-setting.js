@@ -1,5 +1,6 @@
 "use strict";
 
+//Feature
 const options1 = {
   // 通常のオプション
   type: "loop",
@@ -10,6 +11,22 @@ const options1 = {
   autoScroll: {
     speed: 0.5,
     pauseOnHover: false,
+  },
+  breakpoints: {
+    768: {
+      perPage: 2,
+      autoScroll: {
+        speed: 1,
+        pauseOnHover: false,
+      },
+    },
+    587: {
+      perPage: 1,
+      autoScroll: {
+        speed: 1,
+        pauseOnHover: false,
+      },
+    },
   },
 };
 const splide1 = new Splide(".splide1", options1);

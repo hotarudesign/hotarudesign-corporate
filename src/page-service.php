@@ -14,7 +14,7 @@
                     <li class="coding__item">
                         <div class="coding__txt">
                             <div class="coding__txt__head">
-                                <h3 class="coding__txt__head-ttl">Webサイト／LPコーディング</h3>
+                                <h3 class="coding__txt__head-ttl">Webサイト／<br class="md-br">LPコーディング</h3>
                                 <p class="coding__txt__head-num">01</p>
                             </div>
                             <p class="coding__txt-desc">コーポレートサイトや採用目的のWebサイト、サービス訴求等を目的としたLP（ランディングページ）のコーディングを行います。<br><br>保守性、拡張性を保ちつつ、サイトパフォーマンスを考慮してコーディングを行います。<br><br>JavaScriptを用いたアニメーションなどについてもお気軽にご相談ください。</p>
@@ -49,7 +49,7 @@
                     <li class="coding__item">
                         <div class="coding__txt">
                             <div class="coding__txt__head">
-                                <h3 class="coding__txt__head-ttl">Webサイト／LPデザイン</h3>
+                                <h3 class="coding__txt__head-ttl">Webサイト／<br class="md-br">LPデザイン</h3>
                                 <p class="coding__txt__head-num">01</p>
                             </div>
                             <p class="coding__txt-desc">WebサイトやLPのデザインを承っております。目的や用途を捉え最大限効果が引き出せるようデザインを行います。<br><br>デザインを行う際は、事前にヒアリングを行い、お好みに近い形で実装してまいりますのでご安心ください。</p>
@@ -64,7 +64,7 @@
                     <li class="coding__item">
                         <div class="coding__txt">
                             <div class="coding__txt__head">
-                                <h3 class="coding__txt__head-ttl">サムネイル／商品画像制作</h3>
+                                <h3 class="coding__txt__head-ttl">サムネイル／<br class="md-br">商品画像制作</h3>
                                 <p class="coding__txt__head-num">02</p>
                             </div>
                             <p class="coding__txt-desc">YouTubeなどに使用するサムネイル、楽天市場、Yahoo!ショッピング等で利用する商品画像の制作を承っております。<br><br>どんな意図を持って画像を制作するかなど画像に対して役割を明確にした状態で制作を行います。</p>

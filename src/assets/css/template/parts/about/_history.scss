@@ -41,6 +41,9 @@
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
+    @include v.sm {
+      gap: 20px 0;
+    }
   }
   &__item {
     display: flex;
@@ -48,11 +51,17 @@
     align-items: center;
     flex-direction: row-reverse;
     gap: 0 20px;
+    @include v.sm {
+      gap: 0 10px;
+    }
     &-desc {
       width: calc(100% - 30px);
       font-weight: 400;
       font-size: 2rem;
       line-height: 1.8;
+      @include v.sm {
+        font-size: 1.6rem;
+      }
     }
     &-num {
       width: 40px;
@@ -62,6 +71,11 @@
       font-size: 2.8rem;
       text-align: center;
       position: relative;
+      @include v.sm {
+        width: 34px;
+        height: 34px;
+        font-size: 2rem;
+      }
       &:before {
         content: "";
         display: inline-block;
@@ -73,6 +87,11 @@
         top: 44%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @include v.sm {
+          top: 36%;
+          width: 34px;
+          height: 34px;
+        }
       }
     }
   }

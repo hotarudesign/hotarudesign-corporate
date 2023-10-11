@@ -16,9 +16,16 @@
     border-style: solid;
     border-width: 120px 100vw 0 0;
     border-color: transparent #222 transparent transparent;
+    @include v.sm {
+      border-width: 40px 100vw 0 0;
+    }
   }
   &-ttl {
     font-style: italic;
+    @include v.sm {
+      font-size: 4rem;
+      text-align: center;
+    }
   }
   &__list {
     display: flex;
@@ -31,8 +38,15 @@
     justify-content: space-between;
     align-items: center;
     gap: 0 40px;
+    @include v.sm {
+      flex-direction: column;
+      gap: 20px 0;
+    }
     &:nth-child(even) {
       flex-direction: row-reverse;
+      @include v.sm {
+        flex-direction: column;
+      }
     }
     &__txt {
       display: flex;
@@ -41,14 +55,23 @@
       flex-direction: column;
       gap: 20px 0;
       width: 60%;
+      @include v.sm {
+        width: 100%;
+      }
       &-ttl {
         font-weight: 700;
         font-size: 3.2rem;
+        @include v.sm {
+          font-size: 2.4rem;
+        }
       }
       &-desc {
         font-weight: 400;
         font-size: 2rem;
         line-height: 1.8;
+        @include v.sm {
+          font-size: 1.5rem;
+        }
       }
     }
     &-thumb {

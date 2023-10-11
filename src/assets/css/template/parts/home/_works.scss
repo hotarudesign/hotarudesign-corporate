@@ -15,6 +15,9 @@
     border-style: solid;
     border-width: 120px 100vw 0 0;
     border-color: transparent #efefef transparent transparent;
+    @include v.sm {
+      border-width: 40px 100vw 0 0;
+    }
   }
   .block {
     width: 250px;
@@ -25,6 +28,7 @@
     left: 0;
     transform: translateY(-50%);
     @include v.sm {
+      top: 58%;
       width: 100px;
       height: 100px;
     }
@@ -53,6 +57,9 @@
   &__inner {
     display: flex;
     position: relative;
+    @include v.sm {
+      flex-direction: column;
+    }
     .splide {
       margin: 0 calc(50% - 50vw);
       width: 100vw;
@@ -62,6 +69,10 @@
       left: 0;
       z-index: 1;
       visibility: visible;
+      @include v.sm {
+        top: 60%;
+        z-index: 5;
+      }
       &__track {
         height: 100%;
       }
@@ -72,6 +83,15 @@
         font-weight: 900;
         font-size: 6rem;
         color: #e7e7e7;
+        @include v.xl {
+          font-size: 4rem;
+        }
+        @include v.lg {
+          font-size: 3.2rem;
+        }
+        @include v.sm {
+          font-size: 1.4rem;
+        }
       }
     }
   }
@@ -84,15 +104,32 @@
     background: #e7e7e7;
     position: relative;
     z-index: 2;
+    @include v.lg {
+      padding: 50px 20px;
+    }
+    @include v.sm {
+      width: 100%;
+      z-index: 5;
+    }
     .works {
       &-ttl {
         font-style: italic;
+        @include v.sm {
+          font-size: 4rem;
+        }
       }
       &-desc {
         margin: 40px 0 0;
         font-weight: 400;
         font-size: 1.8rem;
         line-height: 1.8;
+        @include v.xl {
+          font-size: 1.6rem;
+        }
+        @include v.lg {
+          margin: 15px 0 0;
+          text-align: left;
+        }
       }
       &-link {
         margin: 40px auto 0;
@@ -106,6 +143,9 @@
         border-radius: 10px;
         transition: 0.5s;
         box-shadow: 3px 3px 10px #ccc;
+        @include v.lg {
+          margin: 15px auto 0;
+        }
         &:hover,
         &:focus {
           background: #fff;
@@ -116,11 +156,19 @@
       &__btn {
         margin: 30px auto 0;
         width: 220px;
+        @include v.lg {
+          margin: 15px auto 0;
+        }
       }
     }
   }
   .right {
     width: 50%;
+    @include v.sm {
+      width: 100%;
+      position: relative;
+      z-index: -1;
+    }
     .works {
       &__thumb {
         width: 100%;

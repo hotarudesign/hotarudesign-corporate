@@ -4,12 +4,23 @@
   padding: 80px 0 100px;
   &-ttl {
     font-style: italic;
+    @include v.sm {
+      font-size: 4rem;
+      text-align: center;
+    }
   }
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 0 40px;
     margin: 80px 0 0;
+    @include v.xl {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0 20px;
+    }
+    @include v.sm {
+      gap: 40px 0;
+    }
   }
   &__item {
     display: flex;
@@ -35,6 +46,10 @@
       margin: 0 auto;
       width: 160px;
       height: 160px;
+      @include v.xl {
+        width: 120px;
+        height: 120px;
+      }
       img {
         width: 100%;
         height: 100%;

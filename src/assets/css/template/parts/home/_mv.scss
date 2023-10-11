@@ -27,6 +27,10 @@
     }
     &::after {
       top: 50%;
+      @include v.xl {
+        height: 51vh;
+        top: 49%;
+      }
     }
   }
 
@@ -45,6 +49,9 @@
       font-weight: 900;
       font-size: 6rem;
       opacity: 1;
+      @include v.sm {
+        font-size: 4.2rem;
+      }
     }
     &-lead {
       font-weight: 300;
@@ -69,42 +76,72 @@
         height: 30px;
         top: 20%;
         right: 2%;
+        @include v.sm {
+          width: 15px;
+          height: 15px;
+        }
       }
       &02 {
         width: 45px;
         height: 45px;
         top: 10%;
         right: 10%;
+        @include v.sm {
+          width: 30px;
+          height: 30px;
+        }
       }
       &03 {
         width: 60px;
         height: 60px;
         top: 20%;
         right: 20%;
+        @include v.sm {
+          width: 45px;
+          height: 45px;
+        }
       }
       &04 {
         width: 20px;
         height: 20px;
         bottom: 20%;
         right: 30%;
+        @include v.sm {
+          width: 10px;
+          height: 10px;
+        }
       }
       &05 {
         width: 35px;
         height: 35px;
         bottom: 40%;
         right: 40%;
+        @include v.sm {
+          width: 25px;
+          height: 25px;
+        }
       }
       &06 {
         width: 60px;
         height: 60px;
         top: 30%;
         left: 50%;
+        @include v.sm {
+          width: 45px;
+          height: 45px;
+          left: 40%;
+        }
       }
       &07 {
         width: 60px;
         height: 60px;
         top: 20%;
         left: 30%;
+        @include v.sm {
+          width: 45px;
+          height: 45px;
+          left: 15%;
+        }
       }
       &08 {
         width: 10px;
@@ -117,6 +154,9 @@
         height: 25px;
         bottom: 50%;
         left: 10%;
+        @include v.sm {
+          bottom: 40%;
+        }
       }
       &10 {
         width: 40px;

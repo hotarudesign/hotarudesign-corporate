@@ -14,12 +14,19 @@
       font-weight: 700;
       font-size: 3.2rem;
       text-align: center;
+      @include v.sm {
+        font-size: 2.8rem;
+      }
     }
     &-desc {
       font-weight: 400;
       font-size: 1.8rem;
       line-height: 1.8;
       text-align: center;
+      @include v.sm {
+        font-size: 1.6rem;
+        letter-spacing: -0.01em;
+      }
     }
   }
   .mw_wp_form {
