@@ -89,7 +89,7 @@ ScrollTrigger.create({
   endTrigger: ".works__thumb03",
   end: "center center",
   pinSpacing: false,
-  markers: true,
+  markers: false,
 });
 
 gsap.set("#skill__line", {

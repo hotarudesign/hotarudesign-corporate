@@ -26,7 +26,7 @@ $accentColor: #23afb7;
 }
 // 768px未満
 @mixin md {
-  @media not screen and (min-width: ($md)) {
+  @media (max-width: ($md)) {
     @content;
   }
 }
