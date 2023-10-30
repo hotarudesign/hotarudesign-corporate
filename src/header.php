@@ -2,15 +2,18 @@
 <html lang="ja">
 
 <head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CJPETQKNJ0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJPETQKNJ0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-CJPETQKNJ0');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CJPETQKNJ0');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +28,7 @@
         <div class="header__inner">
             <h1 class="header__logo logo">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src='<?php echo ImgPath; ?>/logo-white-nobg.svg' alt='Hotaru Design'>
+                    <img src='<?php echo ImgPath; ?>/logo-white-nobg.svg' width="30" height="45" alt='Hotaru Design'>
                 </a>
             </h1>
             <button class="toggle-btn"><span></span><span></span></button>

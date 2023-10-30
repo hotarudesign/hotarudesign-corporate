@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer__inner inner">
         <a href="<?php echo esc_url(home_url('/')); ?>" class="footer__logo">
-            <img src="<?php echo ImgPath; ?>/logo-white-nobg.svg" alt="">
+            <img src="<?php echo ImgPath; ?>/logo-white-nobg.svg" width="30" height="45" alt="Hotaru Design">
         </a>
         <?php
         wp_nav_menu(

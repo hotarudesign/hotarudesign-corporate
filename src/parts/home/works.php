@@ -25,8 +25,8 @@
                 <p class="works__btn-txt btn-txt">View More</p>
                 <div class="works__btn-icon btn-icon">
                     <picture>
-                        <source srcset='<?php echo ImgPath; ?>/webp/btn_arrow-black.webp' type='image/webp'>
-                        <img src="<?php echo ImgPath; ?>/btn_arrow-black.png" alt="">
+                        <source srcset='<?php echo ImgPath; ?>/webp/btn_arrow-black.webp' src="<?php echo ImgPath; ?>/webp/btn_arrow-black.webp" width="40" height="40" type='image/webp'>
+                        <img src="<?php echo ImgPath; ?>/btn_arrow-black.png" width="40" height="40" alt="">
                     </picture>
                 </div>
             </a>
