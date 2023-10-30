@@ -34,20 +34,20 @@
         <div class="right">
             <figure class="works__thumb works__thumb01">
                 <picture>
-                    <source srcset='<?php echo ImgPath; ?>/webp/works_item01.webp' type='image/webp'>
-                    <img src="<?php echo ImgPath; ?>/works_item01.jpeg" alt="">
+                    <source srcset='<?php echo ImgPath; ?>/webp/works_item01.webp' src="<?php echo ImgPath; ?>/webp/works_item01.webp" width="583" height="420" type='image/webp'>
+                    <img src="<?php echo ImgPath; ?>/works_item01.jpeg" width="583" height="420" alt="">
                 </picture>
             </figure>
             <figure class="works__thumb works__thumb02">
                 <picture>
-                    <source srcset='<?php echo ImgPath; ?>/webp/works_item02.webp' type='image/webp'>
-                    <img src="<?php echo ImgPath; ?>/works_item02.jpeg" alt="">
+                    <source srcset='<?php echo ImgPath; ?>/webp/works_item02.webp' src="<?php echo ImgPath; ?>/webp/works_item02.webp" width="583" height="420" type='image/webp'>
+                    <img src="<?php echo ImgPath; ?>/works_item02.jpeg" width="583" height="420" alt="">
                 </picture>
             </figure>
             <figure class="works__thumb works__thumb03">
                 <picture>
-                    <source srcset='<?php echo ImgPath; ?>/webp/works_item03.webp' type='image/webp'>
-                    <img src="<?php echo ImgPath; ?>/works_item03.jpeg" alt="">
+                    <source srcset='<?php echo ImgPath; ?>/webp/works_item03.webp' src="<?php echo ImgPath; ?>/webp/works_item03.webp" width="583" height="420" type='image/webp'>
+                    <img src="<?php echo ImgPath; ?>/works_item03.jpeg" width="583" height="420" alt="">
                 </picture>
             </figure>
         </div>
