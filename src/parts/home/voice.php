@@ -9,7 +9,7 @@
                     </p>
                 </div>
                 <figure class="voice__item-avatar">
-                    <img src='<?php echo ImgPath; ?>/voice_item01.svg' width="160" height="160" alt=''>
+                    <img src='<?php echo ImgPath; ?>/voice_item01.svg' width="160" height="160" alt='' loading="lazy">
                 </figure>
             </li>
             <li class="voice__item">
@@ -19,7 +19,7 @@
                     </p>
                 </div>
                 <figure class="voice__item-avatar">
-                    <img src='<?php echo ImgPath; ?>/voice_item02.svg' width="160" height="160" alt=''>
+                    <img src='<?php echo ImgPath; ?>/voice_item02.svg' width="160" height="160" alt='' loading="lazy">
                 </figure>
             </li>
             <li class="voice__item">
@@ -28,7 +28,7 @@
                     <p class="voice__item__txt-desc">いつも丁寧なコミュニケーションをとってくれて、こちらが気が付かないような欠点も事前に気がつかせてくれました。</p>
                 </div>
                 <figure class="voice__item-avatar">
-                    <img src='<?php echo ImgPath; ?>/voice_item03.svg' width="160" height="160" alt=''>
+                    <img src='<?php echo ImgPath; ?>/voice_item03.svg' width="160" height="160" alt='' loading="lazy">
                 </figure>
             </li>
         </ol>

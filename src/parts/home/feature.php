@@ -46,7 +46,7 @@
                     <figure class="splide__slide__thumb">
                         <picture>
                             <source srcset='<?php echo ImgPath; ?>/webp/feature_01.webp' src="<?php echo ImgPath; ?>/webp/feature_01.webp" width="1200" height="1600" type='image/webp'>
-                            <img src="<?php echo ImgPath; ?>/feature_01.png" width="1200" height="1600" alt="">
+                            <img src="<?php echo ImgPath; ?>/feature_01.png" width="1200" height="1600" alt="" loading="lazy">
                         </picture>
                     </figure>
                 </li>
@@ -54,7 +54,7 @@
                     <figure class="splide__slide__thumb">
                         <picture>
                             <source srcset='<?php echo ImgPath; ?>/webp/feature_02.webp' src="<?php echo ImgPath; ?>/webp/feature_02.webp" width="1200" height="1600" type='image/webp'>
-                            <img src="<?php echo ImgPath; ?>/feature_02.png" width="1200" height="1600" alt="">
+                            <img src="<?php echo ImgPath; ?>/feature_02.png" width="1200" height="1600" alt="" loading="lazy">
                         </picture>
                     </figure>
                 </li>
@@ -62,7 +62,7 @@
                     <figure class="splide__slide__thumb">
                         <picture>
                             <source srcset='<?php echo ImgPath; ?>/webp/feature_03.webp' src="<?php echo ImgPath; ?>/webp/feature_03.webp" width="1200" height="1600" type='image/webp'>
-                            <img src="<?php echo ImgPath; ?>/feature_03.png" width="1200" height="1600" alt="">
+                            <img src="<?php echo ImgPath; ?>/feature_03.png" width="1200" height="1600" alt="" loading="lazy">
                         </picture>
                     </figure>
                 </li>
