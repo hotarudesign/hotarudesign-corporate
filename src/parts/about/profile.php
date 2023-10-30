@@ -14,8 +14,8 @@
             </div>
             <figure class="profile__item-thumb">
                 <picture>
-                    <source srcset='<?php echo ImgPath; ?>/webp/about_thumb.webp' type='image/webp'>
-                    <img src="<?php echo ImgPath; ?>/about_thumb.jpg" alt="">
+                    <source srcset='<?php echo ImgPath; ?>/webp/about_thumb.webp' src="<?php echo ImgPath; ?>/webp/about_thumb.webp" width="563" height="376" type='image/webp'>
+                    <img src="<?php echo ImgPath; ?>/about_thumb.jpg" width="563" height="376" alt="" loading="lazy">
                 </picture>
             </figure>
         </div>

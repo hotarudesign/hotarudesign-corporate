@@ -27,7 +27,14 @@
                                 <a href="<?php echo the_permalink(); ?>" class="works__item-link">
                                     <p class="works__item-ttl"><?php the_title(); ?></p>
                                     <figure class="works__item-thumb">
-                                        <?php the_post_thumbnail(); ?>
+                                        <?php
+                                        if (has_post_thumbnail()) {
+                                            $attr = array(
+                                                'loading' => 'lazy',
+                                            );
+                                        }
+                                        ?>
+                                        <?php the_post_thumbnail(array(362, 228), $attr); ?>
                                     </figure>
                                 </a>
                             </li>

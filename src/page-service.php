@@ -21,8 +21,8 @@
                         </div>
                         <figure class="coding__thumb">
                             <picture>
-                                <source srcset='<?php echo ImgPath; ?>/webp/coding_item01.webp' type='image/webp'>
-                                <img src="<?php echo ImgPath; ?>/coding_item01.jpeg" alt="">
+                                <source srcset='<?php echo ImgPath; ?>/webp/coding_item01.webp' src="<?php echo ImgPath; ?>/webp/coding_item01.webp" width="616" height="410" type='image/webp'>
+                                <img src="<?php echo ImgPath; ?>/coding_item01.jpeg" width="616" height="410" alt="" loading="lazy">
                             </picture>
                         </figure>
                     </li>
@@ -36,8 +36,8 @@
                         </div>
                         <figure class="coding__thumb">
                             <picture>
-                                <source srcset='<?php echo ImgPath; ?>/webp/coding_item02.webp' type='image/webp'>
-                                <img src="<?php echo ImgPath; ?>/coding_item02.jpeg" alt="">
+                                <source srcset='<?php echo ImgPath; ?>/webp/coding_item02.webp' src="<?php echo ImgPath; ?>/webp/coding_item02.webp" width="616" height="410" type='image/webp'>
+                                <img src="<?php echo ImgPath; ?>/coding_item02.jpeg" width="616" height="410" alt="" loading="lazy">
                             </picture>
                         </figure>
                     </li>
@@ -56,8 +56,8 @@
                         </div>
                         <figure class="coding__thumb">
                             <picture>
-                                <source srcset='<?php echo ImgPath; ?>/webp/design_item01.webp' type='image/webp'>
-                                <img src="<?php echo ImgPath; ?>/design_item01.jpeg" alt="">
+                                <source srcset='<?php echo ImgPath; ?>/webp/design_item01.webp' src="<?php echo ImgPath; ?>/webp/design_item01.webp" width="616" height="410" type='image/webp'>
+                                <img src="<?php echo ImgPath; ?>/design_item01.jpeg" width="616" height="410" alt="" loading="lazy">
                             </picture>
                         </figure>
                     </li>
@@ -71,8 +71,8 @@
                         </div>
                         <figure class="coding__thumb">
                             <picture>
-                                <source srcset='<?php echo ImgPath; ?>/webp/design_item02.webp' type='image/webp'>
-                                <img src="<?php echo ImgPath; ?>/design_item02.jpeg" alt="">
+                                <source srcset='<?php echo ImgPath; ?>/webp/design_item02.webp' src="<?php echo ImgPath; ?>/webp/design_item02.webp" width="616" height="410" type='image/webp'>
+                                <img src="<?php echo ImgPath; ?>/design_item02.jpeg" width="616" height="410" alt="" loading="lazy">
                             </picture>
                         </figure>
                     </li>

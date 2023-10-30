@@ -28,7 +28,14 @@
                                 <a href="<?php echo the_permalink(); ?>" class="works__item-link">
                                     <p class="works__item-ttl"><?php the_title(); ?></p>
                                     <figure class="works__item-thumb">
-                                        <?php the_post_thumbnail(); ?>
+                                        <?php
+                                        if (has_post_thumbnail()) {
+                                            $attr = array(
+                                                'loading' => 'lazy',
+                                            );
+                                        }
+                                        ?>
+                                        <?php the_post_thumbnail(array(362, 228), $attr); ?>
                                     </figure>
                                 </a>
                             </li>
@@ -66,7 +73,14 @@
                                 <a href="<?php echo the_permalink(); ?>" class="works__item-link">
                                     <p class="works__item-ttl"><?php the_title(); ?></p>
                                     <figure class="works__item-thumb">
-                                        <?php the_post_thumbnail(); ?>
+                                        <?php
+                                        if (has_post_thumbnail()) {
+                                            $attr = array(
+                                                'loading' => 'lazy',
+                                            );
+                                        }
+                                        ?>
+                                        <?php the_post_thumbnail(array(362, 228), $attr); ?>
                                     </figure>
                                 </a>
                             </li>
@@ -78,8 +92,8 @@
                     <p class="post__head__btn-txt btn-txt">View More</p>
                     <div class="post__head__btn-icon btn-icon">
                         <picture>
-                            <source srcset='<?php echo ImgPath; ?>/webp/btn_arrow-black.webp' type='image/webp'>
-                            <img src="<?php echo ImgPath; ?>/btn_arrow-black.png" alt="">
+                            <source srcset='<?php echo ImgPath; ?>/webp/btn_arrow-black.webp' src="<?php echo ImgPath; ?>/webp/btn_arrow-black.webp" width="40" height="40" type='image/webp'>
+                            <img src="<?php echo ImgPath; ?>/btn_arrow-black.png" width="40" height="40" alt="" loading="lazy">
                         </picture>
                     </div>
                 </a>
